@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТВОЙ LOFT | Производство дизайнерской мебели</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <header class="navbar">
+        <div class="logo" onclick="app.nav('home')">T.LOFT</div>
+        <nav class="desktop-nav">
+            <a href="javascript:void(0)" onclick="app.nav('home')">Главная</a>
+            <a href="javascript:void(0)" onclick="app.nav('catalog')">Каталог</a>
+            <a href="javascript:void(0)" onclick="app.nav('process')">Производство</a>
+            <a href="javascript:void(0)" onclick="app.nav('price')">Прайс</a>
+            <a href="javascript:void(0)" onclick="app.nav('contact')" class="nav-cta">Обсудить проект</a>
+        </nav>
+    </header>
+
+    <main id="app-root"></main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>T.LOFT</h2>
+                <p>Создаем индустриальное наследие с 2018 года.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li onclick="app.nav('catalog')">Столы</li>
+                    <li onclick="app.nav('catalog')">Стеллажи</li>
+                    <li onclick="app.nav('price')">Цены</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Контакты</h4>
+                <p>Алматы, пр. Райымбека, 212</p>
+                <p>+7 (707) 123 45 67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ТВОЙ LOFT. Все права защищены. Дизайн: Web Crafted Studio.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
